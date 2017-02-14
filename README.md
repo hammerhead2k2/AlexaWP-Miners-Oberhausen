@@ -1,6 +1,8 @@
-# AlexaWP
+# AlexaWP-Miners Oberhausen
 
-AlexaWP is a WordPress plugin that integrates with Amazon Alexa to create and enable the creation of Alexa skills.
+AlexaWP Miners Oberhausen is a WordPress plugin that integrates with Amazon Alexa to create and enable the creation of Alexa skills.
+
+Goal of the project is the disability access to the Website of Miners Oberhausen
 
 It allows you to use WordPress as an endpoint.
 
@@ -9,6 +11,8 @@ It allows you to use WordPress as an endpoint.
 ## Giving credit where it's due
 
 This project is built on top of [Amazon Alexa PHP](https://github.com/jakubsuchy/amazon-alexa-php) and the work of its authors as well as this [Drupal project](https://www.drupal.org/project/alexa). Authors of those projects include: Jakub Suchy, Emanuele Corradini, Mathias Hansen, Chris Hamper
+
+This project ist built on top of [AlexaWP](https://github.com/tomharrigan/AlexaWP) from Author Tom Harrigan
 
 ## Functionality and setup
 
@@ -41,15 +45,6 @@ The endpoint for this will be at:
 
 ----
 
-## Contribute
+## Note
 
-I very much welcome pull requests and collaboration on this project.
-
-## To Do
-
-- More caching is needed around the endpoint content
-
-- News skill can become more useful by allowing category selection without any heavy lifting
-
-- Utterance generation can be further flushed out along with more helpful guidance within the wp-admin context
-
+- The project is in very eraly alpha stadium
