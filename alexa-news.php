@@ -68,7 +68,7 @@ class Alexa_News {
 					}
 
 					if ( $term_slot && ! $args['tax_query'] ) {
-						$response->respond( __( "Sorry! I couldn't find any news about that topic.", 'alexawp' ) )->endSession();
+						$response->respond( __( "Sorry! ich konnte keine Nachrichten zu diesem Thema finden.", 'alexawp' ) )->endSession();
 						break;
 					}
 
@@ -77,7 +77,7 @@ class Alexa_News {
 					$response
 						->respond( $result['content'] )
 						/* translators: %s: site title */
-						->withCard( sprintf( __( 'Latest on %s', 'alexawp' ), get_bloginfo( 'name' ) ) )
+						->withCard( sprintf( __( 'Die aktuellen Beiträge %s', 'alexawp' ), get_bloginfo( 'name' ) ) )
 						->addSessionAttribute( 'post_ids', $result['ids'] );
 					break;
 				case 'ReadPost':
@@ -91,14 +91,14 @@ class Alexa_News {
 					$response->respond( $result['content'] )->withCard( $result['title'] )->endSession();
 					break;
 				case 'AMAZON.StopIntent':
-					$response->respond( __( 'Thanks for listening!', 'alexawp' ) )->endSession();
+					$response->respond( __( 'Bis demnächst', 'alexawp' ) )->endSession();
 					break;
 				default:
 					# code...
 					break;
 			}
 		} elseif ( $request instanceof Alexa\Request\LaunchRequest ) {
-			$response->respond( __( "Ask me what's new!", 'alexawp' ) );
+			$response->respond( __( "Frag mich nach neuen Beiträgen!", 'alexawp' ) );
 		}
 	}
 
